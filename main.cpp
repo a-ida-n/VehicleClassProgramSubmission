@@ -15,11 +15,11 @@ int main()
 	std::string inputManufacturer;
 	int inputYearBuilt;
 
-	std::cout << "\nEnter the vehicle manufacturer: ";
+	std::cout << "Enter the vehicle manufacturer: ";
 	std::cin >> inputManufacturer;
 	newVehicle.Set_Manufacturer(inputManufacturer);
 
-	std::cout << "\nEnter the year that the vehcile was built: ";
+	std::cout << "Enter the year that the vehcile was built: ";
 	std::cin >> inputYearBuilt;
 	newVehicle.Set_Year_Built(inputYearBuilt);
 
@@ -32,15 +32,15 @@ int main()
 	inputYearBuilt = 0;
 	int inputDoorCount;
 
-	std::cout << "\nEnter the car manufacturer: ";
+	std::cout << "\n\nEnter the car manufacturer: ";
 	std::cin >> inputManufacturer;
 	newCar.Set_Manufacturer(inputManufacturer);
 
-	std::cout << "\nEnter the year that the car was built: ";
+	std::cout << "Enter the year that the car was built: ";
 	std::cin >> inputYearBuilt;
 	newCar.Set_Year_Built(inputYearBuilt);
 	
-	std::cout << "\nEnter the number of doors that the car has: ";
+	std::cout << "Enter the number of doors that the car has: ";
 	std::cin >> inputDoorCount;
 	newCar.Set_Door_Count(inputDoorCount);
 
@@ -53,19 +53,21 @@ int main()
 	inputYearBuilt = 0;
 	int inputTowingCapacity;
 
-	std::cout << "\nEnter the trunk manufacturer: ";
+	std::cout << "\n\nEnter the trunk manufacturer: ";
 	std::cin >> inputManufacturer;
 	newTruck.Set_Manufacturer(inputManufacturer);
 
-	std::cout << "\nEnter the year that the truck was built: ";
+	std::cout << "Enter the year that the truck was built: ";
 	std::cin >> inputYearBuilt;
 	newTruck.Set_Year_Built(inputYearBuilt);
 
-	std::cout << "\nEnter the truck's max towing capacity (in pounds): ";
+	std::cout << "Enter the truck's max towing capacity (in pounds): ";
 	std::cin >> inputTowingCapacity;
 	newTruck.Set_Tow_Capacity(inputTowingCapacity);
 
 	newTruck.Display_Info();
 
+	std::cout << "\n\n";
+	system("pause");
 	return 0;
 }
