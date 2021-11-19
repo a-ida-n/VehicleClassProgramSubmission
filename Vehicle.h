@@ -9,7 +9,7 @@ private:
 	int yearBuilt;
 
 public:
-	Vehicle_C ();
+	Vehicle_C();
 
 	void Set_Manufacturer(std::string);
 	std::string Get_Manufacturer() const;
@@ -17,5 +17,5 @@ public:
 	void Set_Year_Built(int);
 	int Get_Year_Built() const;
 
-	void Display_Info() const;
+	virtual void Display_Info() const;
 };
