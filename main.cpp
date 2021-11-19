@@ -16,7 +16,7 @@ int main()
 	int inputYearBuilt;
 
 	std::cout << "Enter the vehicle manufacturer: ";
-	std::cin >> inputManufacturer;
+	std::getline(std::cin, inputManufacturer);
 	newVehicle.Set_Manufacturer(inputManufacturer);
 
 	std::cout << "Enter the year that the vehcile was built: ";
@@ -33,7 +33,8 @@ int main()
 	int inputDoorCount;
 
 	std::cout << "\n\nEnter the car manufacturer: ";
-	std::cin >> inputManufacturer;
+	std::cin.ignore();
+	std::getline(std::cin, inputManufacturer);
 	newCar.Set_Manufacturer(inputManufacturer);
 
 	std::cout << "Enter the year that the car was built: ";
@@ -54,7 +55,8 @@ int main()
 	int inputTowingCapacity;
 
 	std::cout << "\n\nEnter the trunk manufacturer: ";
-	std::cin >> inputManufacturer;
+	std::cin.ignore();
+	std::getline(std::cin, inputManufacturer);
 	newTruck.Set_Manufacturer(inputManufacturer);
 
 	std::cout << "Enter the year that the truck was built: ";
