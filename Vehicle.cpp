@@ -30,7 +30,7 @@ int Vehicle_C::Get_Year_Built() const
 
 void Vehicle_C::Display_Info() const
 {
-	std::cout << "--Vehicle Information--";
+	std::cout << "\n--Vehicle Information--";
 	std::cout << "\nVehicle's manufacturer is: " << manufacturer;
 	std::cout << "\nVehicle was built in: " << yearBuilt;
 }
